@@ -1,0 +1,87 @@
+.taskListItem_container {
+    list-style: none;
+    color: var(--gray-100);
+    line-height: 140%;
+    font-size: 0.875rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background-color: var(--gray-500);
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+    min-height: 4.5rem;
+
+
+
+    .taskText {
+        width: 39.5rem;
+        overflow: hidden;
+        align-self: flex-start;
+    }
+
+
+    .svg {
+        align-self: flex-start;
+        cursor: pointer;
+        
+
+        &.deleteIcon:hover{
+            fill: var(--danger);
+            path {
+                fill: var(--danger);
+            }
+        }
+
+        &.checkIconUnchecked, &.checkIconChecked {
+            min-width: 1.5625rem;
+            min-height: 1.5rem;
+        } 
+
+        &.checkIconUnchecked:hover {
+            fill: var(--blue-dark);
+            path {
+                fill: var(--blue-dark);
+            }
+        }
+    }
+
+
+}
+
+.taskListItem_container.taskListItemChecked_container {
+    .svg {
+        &.checkIconChecked:hover {
+            path:first-child, path:nth-child(2) {
+                fill: var(--purple);
+            }
+            path:last-child {
+                fill: var(--gray-100);
+            }
+        }
+    }
+
+    .taskText {
+        text-decoration: line-through;
+        color: var(--gray-300);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .taskListItem_container {
+        width: 20.625rem;
+        padding: 0;
+        
+        .svg {
+            align-self: initial;
+        }
+
+        .taskText {
+            width: 60%;
+            overflow: hidden;
+            align-self: initial;
+        }
+    }
+
+}
