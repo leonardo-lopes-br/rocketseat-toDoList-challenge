@@ -12,7 +12,6 @@ import AppendIcon from "../components/Icons/AppendIcon";
 
 export default function App() {
   
-
   interface TaskItemInterface {
     id: string;
     task: string;
