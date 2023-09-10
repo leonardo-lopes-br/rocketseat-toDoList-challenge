@@ -7,9 +7,9 @@ import './styles/globals.scss'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <HashRouter basename="/">
+    <HashRouter basename="homepage">
       <Routes>
-        <Route path="/homepage" Component={App} element={<App />}/>
+        <Route path="/" Component={App} element={<App />}/>
       </Routes>
     </HashRouter>
         <App/>
