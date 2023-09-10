@@ -39,7 +39,6 @@ export default function App() {
     setCreateTaskInput('');
   }
 
-
   function handleCreateTaskFieldChange(event: React.ChangeEvent<HTMLInputElement>) {
     const { value } = event.target;
     setCreateTaskInput(value);
