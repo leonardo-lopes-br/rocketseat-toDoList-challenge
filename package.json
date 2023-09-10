@@ -1,4 +1,3 @@
-
 {
   "homepage": "https://leonardo-lopes-br.github.io/rocketseat-toDoList-challenge",
   "name": "desafio-01",
@@ -11,14 +10,14 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "serve dist",
-    "predeploy": "npm run build-gh-pages",
-    "deploy": "gh-pages -d build-gh-pages",
-    "build-gh-pages": "react-scripts build && cp build/index.html build/404.html"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
