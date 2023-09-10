@@ -5,7 +5,6 @@ import Button from '../components/Button';
 import CountingLabel from "../components/CountingLabel";
 import TaskListItem from "../components/TaskListItem";
 import PlaceHolderBox from "../components/PlaceholderBox";
-import { HashRouter, Routes, Route } from "react-router-dom";
 
 import { useState } from 'react';
 
@@ -76,13 +75,6 @@ export default function App() {
   }
 
   return (
-    <>
-    <HashRouter basename="/homepage">
-      <Routes>
-        <Route path="/" Component={App} />
-      </Routes>
-    </HashRouter>
-
 
     <div className={styles.app}>
       <Header title='todo'/>
@@ -139,6 +131,5 @@ export default function App() {
         </ul>
       </main>
     </div>
-    </>
   )
 }
