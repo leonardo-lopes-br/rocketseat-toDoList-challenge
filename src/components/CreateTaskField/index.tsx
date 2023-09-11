@@ -7,7 +7,7 @@ interface CreateTaskFieldProps {
     onKeyDown: (event: React.KeyboardEvent<HTMLElement>) => void;
 }
 
-export default function CreateTaskFieldField( { placeholder, onChange, value, onKeyDown } : CreateTaskFieldProps) {
+export default function CreateTaskField( { placeholder, onChange, value, onKeyDown } : CreateTaskFieldProps) {
     return (
         <input
             type='text'

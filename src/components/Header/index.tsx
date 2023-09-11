@@ -9,7 +9,7 @@ interface HeaderProps {
 export default function Header({ title }: HeaderProps) {
 
     const titleSize = title.length;
-    const beginningTitle = titleSize % 2 === 0 ? title.slice(0, titleSize / 2) : title.slice(0, titleSize / 2);
+    const beginningTitle = title.slice(0, titleSize / 2);
     const endingTitle = title.slice(beginningTitle.length, title.length);
 
     return (
